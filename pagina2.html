@@ -12,7 +12,72 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore cum quos commodi. Ipsa labore deleniti, nemo repellat magni culpa, ad molestiae, possimus cumque commodi aliquam! Dolor explicabo a illum?
     </p>
     <img src="imgs/1.png" alt=""/><br/>
-    <hr/><!--linea divisoria para separar contenido-->
+    <hr/><!--Linea divisoria para separar contenido-->
+    <form action=""><!--Formulario-->
+        <fieldset>
+            <legend>Primera parte</legend>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" maxlength="20" placeholder="Escribe tu nombre" type="text">
+            <br>
+            <label for="edad">Edad: </label>
+            <input id="id" type="range" min="18" max="28" step="1">
+            <br>
+            <label for="tiempo_empresa">Tiempo en empresa: </label>
+            <input id="tiemó_empresa" type="number" min="1" max="10" step="1" value="1">
+            <br>
+            <label for="clave">Password: </label>
+            <input id="clave" type="password">
+            <br>
+            <label for="fecha">Fecha: </label>
+            <input id="fecha" type="date" min="2021-01-29" max="2021-02-10">
+            <br>
+            <label for="correo">Correo: </label>
+            <input id="correo" type="email">
+            <br>
+            <label for="color">Color: </label>
+            <input id="color" type="color">
+            <br>
+            <label for="seleccionar">Seleccionar: </label>
+            <input id="seleccionar" type="file" multiple>
+            <br>
+            <input type="hidden" value="2345">
+        </fieldset>
+        <input type="button" value="Button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Borrar">
+    </form>
+    <fieldset>
+        <legend>Segunda parte</legend>
+        <select name="" id="">
+            <option value="1">Medellín</option>
+            <option value="2">Bogotá</option>
+            <option value="3">Barranquilla</option>
+            <option value="4">Pasto</option>
+        </select>
+        <br>
+        <label for="casado">Casado</label>
+        <input id="casado" type="radio" name="estado">
+        <br>
+        <label for="soltero">Soltero</label>
+        <input id="soltero" type="radio" name="estado" checked>
+        <br>
+        <label for="dibujar">Dibujar</label>
+        <input id="dibujar" type="checkbox">
+        <label for="perrear">Perrear</label>
+        <input id="perrear" type="checkbox">
+        <br>
+        <textarea name="" id="" cols="20" rows="5"></textarea>
+        <br>
+        <label for="">Ciudad</label>
+        <input type="text" name="ciudad" list="lista_ciudad">
+        <datalist id="lista_ciudad">
+            <option value="Magdalena">Magdalena</option>
+            <option value="Monteria">Monteria</option>
+            <option value="Cali">Cali</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Medellín">Medellín</option>
+        </datalist>
+    </fieldset>
     <a href="index.html">Regresar</a>
 </body>
 </html>
